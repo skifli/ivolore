@@ -232,7 +232,9 @@ async function parseGallery(active_category) {
 
 export async function displayGallery() {
     const URL_PARAMS = new URLSearchParams(window.location.search);
-    let hashElement = window.location.hash.substring(1);
+    let hashElement = decodeURIComponent(window.location.hash.substring(1));
+
+    console.log(hashElement);
 
     let category = URL_PARAMS.get("category") || "";
     let showEdited = URL_PARAMS.get("type") == "edited";
@@ -252,6 +254,8 @@ export async function displayGallery() {
 
         imageElement.id = image.title;
         imageElement.classList.add("gallery-item");
+
+        console.log(image.title);
 
         if (hashElement == image.title) {
             imageElement.classList.add("highlight");
