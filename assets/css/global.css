@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@300..700&display=swap');
+
+:root {
+    --background-colour: #000000;
+    --text-colour: #FFFFFF;
+    --muted-text-colour: #AAAAAA;
+    --link-colour: #9195FF;
+
+    --column-width: 700px;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+
+    text-align: justify;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+sup {
+    line-height: 0;
+}
+
+a {
+    color: var(--text-colour);
+    text-decoration: none;
+}
+
+a:not(.custom) {
+    color: var(--link-colour);
+
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.25s;
+}
+
+a:not(.custom):hover {
+    text-decoration-color: var(--link-colour);
+}
+
+span.gradient-text {
+    background: linear-gradient(160deg, #CA4246, #9195ff);
+    background-clip: text;
+    color: transparent;
+
+    font-weight: 700;
+}
+
+#content {
+    padding: 0px 25px;
+    padding-bottom: 10px;
+    max-width: var(--column-width);
+
+    margin: 0 auto;
+}
+
+#content .section {
+    margin-bottom: 20px;
+}
+
+#content .section p {
+    margin-bottom: 10px;
+}
+
+code {
+    font-family: "Fira Code", monospace;
+    font-size: 0.8rem;
+    margin: 10px 0px;
+}
+
+.box {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    margin: 10px 0px;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.box i.bx {
+    font-size: 1.2rem;
+}
+
+.box p {
+    margin: 0px !important;
+}
+
+summary:hover {
+    cursor: pointer;
+}

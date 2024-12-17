@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="initial-scale=1">
+
+    <link rel="icon" href="assets/orchard_pfp.webp" type="image/x-icon">
+    <title>Whitepine Secret Videos</title>
+
+    <script defer src="https://eu.umami.is/script.js" data-website-id="cc78779a-0731-4122-a445-358285f1e3fc"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="../assets/css/global.css" rel="stylesheet" />
+    <link href="../assets/css/components/navbar.css" rel="stylesheet" />
+    <link href="../assets/css/components/hero.css" rel="stylesheet" />
+    <link href="../assets/css/components/button.css" rel="stylesheet" />
+    <link href="../assets/css/pages/gallery.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="navbar-container">
+        <div id="navbar">
+            <div id="title">
+                <a class="custom" href="../">
+                    <img src="../assets/orchard_pfp.webp" alt="Ivocord's PFP" height="20px" width="auto" />
+                    <p>whitepine secret videos</p>
+                </a>
+            </div>
+            <div id="links">
+                <a class="custom" href="../">
+                    <p>home</p>
+                </a>
+                <a class="custom" id="active" href="?">
+                    <p>gallery</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="hero">
+        <div id="text">
+            <h1>gallery</h1>
+            <p>
+                Mebia. All of it.
+            </p>
+        </div>
+        <div class="buttons" id="gallery-categories">
+            <a href="?type=edited" class="custom button" id="toggle-image-type-link">
+                <div><i class="bx bx-images"></i>
+                    <p id="toggle-image-type-text">Show Edited Images</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="gallery-content">
+        <div class="section">
+            <div id="gallery">
+            </div>
+            <script type="module">
+                import { displayGallery } from "../assets/js/gallery.js";
+                displayGallery();
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
