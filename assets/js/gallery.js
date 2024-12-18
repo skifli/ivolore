@@ -234,8 +234,6 @@ export async function displayGallery() {
     const URL_PARAMS = new URLSearchParams(window.location.search);
     let hashElement = decodeURIComponent(window.location.hash.substring(1));
 
-    console.log(hashElement);
-
     let category = URL_PARAMS.get("category") || "";
     let showEdited = URL_PARAMS.get("type") == "edited";
 
@@ -254,8 +252,6 @@ export async function displayGallery() {
 
         imageElement.id = image.title;
         imageElement.classList.add("gallery-item");
-
-        console.log(image.title);
 
         if (hashElement == image.title) {
             imageElement.classList.add("highlight");
@@ -284,6 +280,15 @@ export async function displayGallery() {
 
     const toggleImageTypeLink = document.getElementById('toggle-image-type-link');
     toggleImageTypeLink.href = `?type=${showEdited ? 'original' : 'edited'}`;
+
+    toggleImageTypeLink.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        let urlParams = new URLSearchParams(window.location.search);
+        urlParams.set("type", showEdited ? "original" : "edited");
+
+        window.location.search = urlParams.toString();
+    });
 
     const toggleImageTypeText = document.getElementById('toggle-image-type-text');
     toggleImageTypeText.textContent = showEdited ? 'Show Original Images' : 'Show Edited Images';
