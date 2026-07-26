@@ -131,7 +131,7 @@ const rss = `<items>
     <category>Whitepine Episode Announcements</category>
 </item>
 <item>
-    <title>always laid in darkness fade.mp4</title> 
+    <title>always laid in darkness fade.mp4</title>
     <description>Whitepine 3 trailer with snapshot at 15s.</description>
     <link>always laid in darkness fade.mp4_snapshot_00.15_exposure-3.00.jpg</link>
     <originalLink>always laid in darkness fade.mp4_snapshot_00.15.jpg</originalLink>
@@ -173,141 +173,303 @@ const rss = `<items>
     <pubDate>1734196075843</pubDate>
     <category>The Emberton Wire</category>
 </item>
+<item>
+    <title>episode5.png</title>
+    <description>Whitepine 5 premiere announcement.</description>
+    <link>episode5_exposure-3.00.png</link>
+    <originalLink>episode5.png</originalLink>
+    <pubDate>1740763145225</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+</item>
+<item>
+    <title>The Emberton Wire - FUNERAL TODAY</title>
+    <description>Accompanying Whitepine 5, posted at <a href="https://x.com/TheEmbertonWire/status/1895851533104726152" target="_blank">TheEmbertonWire</a>.</description>
+    <link>the_emberton_wire_6.jpg</link>
+    <pubDate>1740841203367</pubDate>
+    <category>The Emberton Wire</category>
+</item>
+<item>
+    <title>episode6.png</title>
+    <description>Whitepine 6 premiere announcement.</description>
+    <link>episode6_exposure-3.00.png</link>
+    <originalLink>episode6.png</originalLink>
+    <pubDate>1745242189791</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+</item>
+<item>
+    <title>The Emberton Wire - EMPATHY: GOOD OR DESTRUCTIVE?</title>
+    <description>Accompanying Whitepine 6, posted at <a href="https://x.com/TheEmbertonWire/status/1914695690833531079" target="_blank">TheEmbertonWire</a>.</description>
+    <link>the_emberton_wire_7.png</link>
+    <pubDate>1745334000677</pubDate>
+    <category>The Emberton Wire</category>
+</item>
+<item>
+    <title>episode7.png</title>
+    <description>Whitepine 7 premiere announcement.</description>
+    <link>episode7_exposure-3.00.png</link>
+    <originalLink>episode7.png</originalLink>
+    <pubDate>1752512858332</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+</item>
+<item>
+    <title>episode7_outnow.png</title>
+    <description>Whitepine 7 out now announcement.</description>
+    <link>episode7_outnow_exposure-3.00.png</link>
+    <originalLink>episode7_outnow.png</originalLink>
+    <pubDate>1752591563587</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+</item>
+<item>
+    <title>The Emberton Wire - NOTHING IMPORTANT HAPPENED TODAY.</title>
+    <description>Accompanying Whitepine 7, posted at <a href="https://x.com/TheEmbertonWire/status/1945146336870875576" target="_blank">TheEmbertonWire</a>.</description>
+    <link>the_emberton_wire_8.jpg</link>
+    <pubDate>1752594000438</pubDate>
+    <category>The Emberton Wire</category>
+</item>
+<item>
+    <title>episode8.png</title>
+    <description>Whitepine 8 premiere announcement.</description>
+    <link>episode8_exposure-3.00.png</link>
+    <originalLink>episode8.png</originalLink>
+    <pubDate>1758134328162</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+</item>
+<item>
+    <title>Editor10.mp4</title>
+    <description>Whitepine 8 trailer with snapshot at 45s.</description>
+    <link>Editor10.mp4_snapshot_00.45_exposure-3.00.png</link>
+    <originalLink>Editor10.mp4_snapshot_00.45.png</originalLink>
+    <pubDate>1758199157869</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+    <category>Whitepine Trailers</category>
+</item>
+<item>
+    <title>episode9.png</title>
+    <description>Whitepine 9 premiere announcement.</description>
+    <link>episode9_exposure-3.00.png</link>
+    <originalLink>episode9.png</originalLink>
+    <pubDate>1764768033903</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+</item>
+<item>
+    <title>vid1_9.mp4</title>
+    <description>Whitepine 9 trailer with snapshot at 21s.</description>
+    <link>vid1_9.mp4_snapshot_00.21_exposure-3.00.png</link>
+    <originalLink>vid1_9.mp4_snapshot_00.21.png</originalLink>
+    <pubDate>1764843904659</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+    <category>Whitepine Trailers</category>
+</item>
+<item>
+    <title>episode9premier.png</title>
+    <description>Whitepine 9 premiering now announcement.</description>
+    <link>episode9premier_exposure-3.00.png</link>
+    <originalLink>episode9premier.png</originalLink>
+    <pubDate>1764863941346</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+</item>
+<item>
+    <title>The Emberton Wire - NOBLEMAN RETURNS: from usherwood, unscathed!</title>
+    <description>Accompanying Whitepine 9, posted at <a href="https://x.com/TheEmbertonWire/status/1996617996639633503" target="_blank">TheEmbertonWire</a>.</description>
+    <link>the_emberton_wire_9.jpg</link>
+    <pubDate>1764865800424</pubDate>
+    <category>The Emberton Wire</category>
+</item>
+<item>
+    <title>episode10.png</title>
+    <description>Whitepine 10 premiere announcement.</description>
+    <link>episode10_exposure-3.00.png</link>
+    <originalLink>episode10.png</originalLink>
+    <pubDate>1773415900156</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+</item>
+<item>
+    <title>episode10premier.png</title>
+    <description>Whitepine 10 premiering now announcement.</description>
+    <link>episode10premier_exposure-3.00.png</link>
+    <originalLink>episode10premier.png</originalLink>
+    <pubDate>1773500307717</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+</item>
+<item>
+    <title>The Emberton Wire - MURDERER CAUGHT! the feared whitepine slasher!</title>
+    <description>Accompanying Whitepine 10, posted at <a href="https://x.com/TheEmbertonWire/status/2032841683809734938" target="_blank">TheEmbertonWire</a>.</description>
+    <link>the_emberton_wire_10.jpg</link>
+    <pubDate>1773502200449</pubDate>
+    <category>The Emberton Wire</category>
+</item>
+
+<item>
+    <title>episode11.png</title>
+    <description>Whitepine 11 premiere announcement.</description>
+    <link>episode11_exposure-3.00.png</link>
+    <originalLink>episode11.png</originalLink>
+    <pubDate>1784732420194</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+</item>
+<item>
+    <title>episode11premier.png</title>
+    <description>Whitepine 11 premiering now announcement.</description>
+    <link>episode11premier_exposure-3.00.png</link>
+    <originalLink>episode11premier.png</originalLink>
+    <pubDate>1784989882658</pubDate>
+    <category>Whitepine Announcements</category>
+    <category>Whitepine Episode Announcements</category>
+</item>
 </items>`;
 
 const parser = new DOMParser();
 
 function formatUnixTimestamp(timestamp) {
-    const date = new Date(timestamp);
+  const date = new Date(timestamp);
 
-    // Use toLocaleString to format the date and time
-    const formattedDate = date.toLocaleString({
-        weekday: 'short', // "Thu"
-        day: '2-digit',   // "01"
-        month: 'short',   // "Aug"
-        year: 'numeric', // "2024"
-        hour: '2-digit',  // "07" (or "19" depending on the time)
-        minute: '2-digit',// "29"
-        hour12: false,   // Use 24-hour format
-    });
+  // Use toLocaleString to format the date and time
+  const formattedDate = date.toLocaleString({
+    weekday: "short", // "Thu"
+    day: "2-digit", // "01"
+    month: "short", // "Aug"
+    year: "numeric", // "2024"
+    hour: "2-digit", // "07" (or "19" depending on the time)
+    minute: "2-digit", // "29"
+    hour12: false, // Use 24-hour format
+  });
 
-    // Replace commas and spaces to match the desired format
-    return formattedDate;
+  // Replace commas and spaces to match the desired format
+  return formattedDate;
 }
 
 async function parseGallery(active_category) {
-    let rssParsed = parser.parseFromString(rss, "text/xml");
-    let rssItems = rssParsed.querySelectorAll("item");
+  let rssParsed = parser.parseFromString(rss, "text/xml");
+  let rssItems = rssParsed.querySelectorAll("item");
 
-    let items = [];
-    let all_categories = new Set();
+  let items = [];
+  let all_categories = new Set();
 
-    rssItems.forEach((item) => {
-        let title = item.querySelector("title").innerHTML;
-        let link = item.querySelector("link").innerHTML;
-        let originalLink = item.querySelector("originalLink");
+  rssItems.forEach((item) => {
+    let title = item.querySelector("title").innerHTML;
+    let link = item.querySelector("link").innerHTML;
+    let originalLink = item.querySelector("originalLink");
 
-        if (originalLink) {
-            originalLink = originalLink.innerHTML;
-        } else {
-            originalLink = link;
-        }
+    if (originalLink) {
+      originalLink = originalLink.innerHTML;
+    } else {
+      originalLink = link;
+    }
 
-        let description = item.querySelector("description").innerHTML;
-        let pubDate = formatUnixTimestamp(parseInt(item.querySelector("pubDate").innerHTML));
-        let categories = [];
+    let description = item.querySelector("description").innerHTML;
+    let pubDate = formatUnixTimestamp(
+      parseInt(item.querySelector("pubDate").innerHTML),
+    );
+    let categories = [];
 
-        item.querySelectorAll("category").forEach((category) => {
-            categories.push(category.innerHTML);
-            all_categories.add(category.innerHTML);
-        });
-
-        items.push({
-            title: title,
-            link: link,
-            originalLink: originalLink,
-            description: description,
-            pubDate: pubDate,
-            categories: categories
-        });
+    item.querySelectorAll("category").forEach((category) => {
+      categories.push(category.innerHTML);
+      all_categories.add(category.innerHTML);
     });
 
-    let buttons = document.getElementById("gallery-categories");
-    let fragment = document.createDocumentFragment();
-
-    all_categories.forEach((category) => {
-        let button = document.createElement("a");
-        button.href = `?category=${category}`;
-        button.className = `custom button ${category == active_category ? "inverse" : ""}`;
-        button.innerHTML = `<div><p><i class='bx bx-hash'></i>${category}</p></div>`;
-        fragment.appendChild(button);
+    items.push({
+      title: title,
+      link: link,
+      originalLink: originalLink,
+      description: description,
+      pubDate: pubDate,
+      categories: categories,
     });
+  });
 
-    buttons.appendChild(fragment);
+  let buttons = document.getElementById("gallery-categories");
+  let fragment = document.createDocumentFragment();
 
-    return items;
+  all_categories.forEach((category) => {
+    let button = document.createElement("a");
+    button.href = `?category=${category}`;
+    button.className = `custom button ${category == active_category ? "inverse" : ""}`;
+    button.innerHTML = `<div><p><i class='bx bx-hash'></i>${category}</p></div>`;
+    fragment.appendChild(button);
+  });
+
+  buttons.appendChild(fragment);
+
+  return items;
 }
 
 export async function displayGallery() {
-    const URL_PARAMS = new URLSearchParams(window.location.search);
-    let hashElement = decodeURIComponent(window.location.hash.substring(1));
+  const URL_PARAMS = new URLSearchParams(window.location.search);
+  let hashElement = decodeURIComponent(window.location.hash.substring(1));
 
-    let category = URL_PARAMS.get("category") || "";
-    let showEdited = URL_PARAMS.get("type") == "edited";
+  let category = URL_PARAMS.get("category") || "";
+  let showEdited = URL_PARAMS.get("type") == "edited";
 
-    let rssGallery = await parseGallery(category);
+  let rssGallery = await parseGallery(category);
 
-    let gallery = document.querySelector("#gallery");
-    let fragment = document.createDocumentFragment();
+  let gallery = document.querySelector("#gallery");
+  let fragment = document.createDocumentFragment();
 
-    rssGallery.forEach((image) => {
-        if (category && !image.categories.includes(category)) {
-            return;
-        }
+  rssGallery.forEach((image) => {
+    if (category && !image.categories.includes(category)) {
+      return;
+    }
 
-        let imageElement = document.createElement("div");
-        let coverImage = document.createElement("img");
+    let imageElement = document.createElement("div");
+    let coverImage = document.createElement("img");
 
-        imageElement.id = image.title;
-        imageElement.classList.add("gallery-item");
+    imageElement.id = image.title;
+    imageElement.classList.add("gallery-item");
 
-        if (hashElement == image.title) {
-            imageElement.classList.add("highlight");
-        }
+    if (hashElement == image.title) {
+      imageElement.classList.add("highlight");
+    }
 
-        coverImage.alt = image.description;
-        coverImage.dataset.editedSrc = `../assets/img/${image.link}`;
-        coverImage.dataset.originalSrc = `../assets/img/${image.originalLink}`;
-        coverImage.dataset.fullSrc = showEdited ? coverImage.dataset.editedSrc : coverImage.dataset.originalSrc;
-        coverImage.src = `${coverImage.dataset.fullSrc}.webp`;
-        coverImage.loading = "lazy";
+    coverImage.alt = image.description;
+    coverImage.dataset.editedSrc = `../assets/img/${image.link}`;
+    coverImage.dataset.originalSrc = `../assets/img/${image.originalLink}`;
+    coverImage.dataset.fullSrc = showEdited
+      ? coverImage.dataset.editedSrc
+      : coverImage.dataset.originalSrc;
+    coverImage.src = `${coverImage.dataset.fullSrc}.webp`;
+    coverImage.loading = "lazy";
 
-        coverImage.onclick = () => window.open(coverImage.dataset.fullSrc, "_blank");
+    coverImage.onclick = () =>
+      window.open(coverImage.dataset.fullSrc, "_blank");
 
-        let imageDescription = document.createElement("div");
-        imageDescription.classList.add("gallery-item-description");
+    let imageDescription = document.createElement("div");
+    imageDescription.classList.add("gallery-item-description");
 
-        imageDescription.innerHTML = `<h3>${showEdited ? `${image.title}&nbsp;<i class="bx bx-edit"></i>` : image.title}</h3><span class="date">${image.pubDate}</span><p class="description">${image.description}</p>`;
+    imageDescription.innerHTML = `<h3>${showEdited ? `${image.title}&nbsp;<i class="bx bx-edit"></i>` : image.title}</h3><span class="date">${image.pubDate}</span><p class="description">${image.description}</p>`;
 
-        imageElement.appendChild(coverImage);
-        imageElement.appendChild(imageDescription);
-        fragment.appendChild(imageElement);
-    });
+    imageElement.appendChild(coverImage);
+    imageElement.appendChild(imageDescription);
+    fragment.appendChild(imageElement);
+  });
 
-    gallery.appendChild(fragment);
+  gallery.appendChild(fragment);
 
-    const toggleImageTypeLink = document.getElementById('toggle-image-type-link');
-    toggleImageTypeLink.href = `?type=${showEdited ? 'original' : 'edited'}`;
+  const toggleImageTypeLink = document.getElementById("toggle-image-type-link");
+  toggleImageTypeLink.href = `?type=${showEdited ? "original" : "edited"}`;
 
-    toggleImageTypeLink.addEventListener("click", (event) => {
-        event.preventDefault();
+  toggleImageTypeLink.addEventListener("click", (event) => {
+    event.preventDefault();
 
-        let urlParams = new URLSearchParams(window.location.search);
-        urlParams.set("type", showEdited ? "original" : "edited");
+    let urlParams = new URLSearchParams(window.location.search);
+    urlParams.set("type", showEdited ? "original" : "edited");
 
-        window.location.search = urlParams.toString();
-    });
+    window.location.search = urlParams.toString();
+  });
 
-    const toggleImageTypeText = document.getElementById('toggle-image-type-text');
-    toggleImageTypeText.textContent = showEdited ? 'Show Original Images' : 'Show Edited Images';
+  const toggleImageTypeText = document.getElementById("toggle-image-type-text");
+  toggleImageTypeText.textContent = showEdited
+    ? "Show Original Images"
+    : "Show Edited Images";
 }
