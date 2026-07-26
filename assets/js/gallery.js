@@ -295,7 +295,7 @@ const rss = `<items>
 </item>
 <item>
     <title>episode10premier.png</title>
-    <description>Whitepine 10 premiering now announcement.</description>
+    <description>Whitepine 10 premiering soon announcement.</description>
     <link>episode10premier_exposure-3.00.png</link>
     <originalLink>episode10premier.png</originalLink>
     <pubDate>1773500307717</pubDate>
@@ -321,7 +321,7 @@ const rss = `<items>
 </item>
 <item>
     <title>episode11premier.png</title>
-    <description>Whitepine 11 premiering now announcement.</description>
+    <description>Whitepine 11 premiering today announcement.</description>
     <link>episode11premier_exposure-3.00.png</link>
     <originalLink>episode11premier.png</originalLink>
     <pubDate>1784989882658</pubDate>
