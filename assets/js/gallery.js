@@ -1,475 +1,252 @@
-const rss = `<items>
-<item>
-    <title>1.png</title>
-    <description>Teaser image 1.</description>
-    <link>1_exposure-3.00.png</link>
-    <originalLink>1.png</originalLink>
-    <pubDate>1722536977371</pubDate>
-    <category>August Teasers</category>
-</item>
-<item>
-    <title>2.png</title>
-    <description>Teaser image 2.</description>
-    <link>2_exposure-3.00.png</link>
-    <originalLink>2.png</originalLink>
-    <pubDate>1722611958702</pubDate>
-    <category>August Teasers</category>
-</item>
-<item>
-    <title>3.png</title>
-    <description>Teaser image 3.</description>
-    <link>3_exposure-3.00.png</link>
-    <originalLink>3.png</originalLink>
-    <pubDate>1722702281860</pubDate>
-    <category>August Teasers</category>
-</item>
-<item>
-    <title>4.mp4</title>
-    <description>Snapshot at 5s of teaser 4 (video).</description>
-    <link>4.mp4_snapshot_00.05_exposure-3.00.jpg</link>
-    <originalLink>4.mp4_snapshot_00.05.jpg</originalLink>
-    <pubDate>1722783607109</pubDate>
-    <category>August Teasers</category>
-</item>
-<item>
-    <title>5.png</title>
-    <description>Teaser image 5.</description>
-    <link>5_exposure-3.00.png</link>
-    <originalLink>5.png</originalLink>
-    <pubDate>1722874213767</pubDate>
-    <category>August Teasers</category>
-</item>
-<item>
-    <title>6.png</title>
-    <description>Teaser image 6. Accompanied by an <a href="https://x.com/TheEmbertonWire" target="_blank">Emberton Wire</a> post.</description>
-    <link>6_exposure-3.00.png</link>
-    <originalLink>6.png</originalLink>
-    <pubDate>1722966955497</pubDate>
-    <category>August Teasers</category>
-</item>
-<item>
-    <title>The Emberton Wire - NOBLEMANS NEW EXPIDETION</title>
-    <description>Accompanying 6.png, posted at <a href="https://x.com/TheEmbertonWire/status/1820878019713474709" target="_blank">The Emberton Wire</a>.</description>
-    <link>the_emberton_wire_1.jpg</link>
-    <pubDate>1722966124834</pubDate>
-    <category>August Teasers</category>
-    <category>The Emberton Wire</category>
-</item>
-<item>
-    <title>7.png</title>
-    <description>Teaser image 7.</description>
-    <link>7_exposure-3.00.png</link>
-    <originalLink>7.png</originalLink>
-    <pubDate>1723049876246</pubDate>
-    <category>August Teasers</category>
-</item>
-<item>
-    <title>8.png</title>
-    <description>Teaser image 8.</description>
-    <link>8_exposure-3.00.png</link>
-    <originalLink>8.png</originalLink>
-    <pubDate>1723129651447</pubDate>
-    <category>August Teasers</category>
-</item>
-<item>
-    <title>9.png</title>
-    <description>Teaser image 9.</description>
-    <link>9_exposure-3.00.png</link>
-    <originalLink>9.png</originalLink>
-    <pubDate>1723224447921</pubDate>
-    <category>August Teasers</category>
-</item>
-<item>
-    <title>11.png</title>
-    <description>Teaser image 11 (characters in Whitepine 1).</description>
-    <link>11_exposure-3.00.png</link>
-    <originalLink>11.png</originalLink>
-    <pubDate>1723388270944</pubDate>
-    <category>August Teasers</category>
-    <category>Whitepine Announcements</category>
-</item>
-<item>
-    <title>The Emberton Wire - MURDER AT WHITEPINE!</title>
-    <description>Accompanying Whitepine 1, posted at <a href="https://x.com/TheEmbertonWire/status/1822945043608654050" target="_blank">TheEmbertonWire</a>.</description>
-    <link>the_emberton_wire_2.jpg</link>
-    <pubDate>1723458941734</pubDate>
-    <category>The Emberton Wire</category>
-</item>
-<item>
-    <title>episode2.png</title>
-    <description>Whitepine 2 premiere announcement.</description>
-    <link>episode2_exposure-3.00.png</link>
-    <originalLink>episode2.png</originalLink>
-    <pubDate>1727044143482</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>trailer2.mp4</title>
-    <description>Whitepine 2 trailer with snapshot at 0s.</description>
-    <link>trailer2.mp4_snapshot_00.00_exposure-3.00.jpg</link>
-    <originalLink>trailer2.mp4_snapshot_00.00.jpg</originalLink>
-    <pubDate>1727044143482</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-    <category>Whitepine Trailers</category>
-</item>
-<item>
-    <title>The Emberton Wire - WHO IS THE CULPRIT</title>
-    <description>Accompanying Whitepine 2, posted at <a href="https://x.com/TheEmbertonWire/status/1840102143065276639" target="_blank">TheEmbertonWire</a>.</description>
-    <link>the_emberton_wire_3.jpg</link>
-    <pubDate>1727549513008</pubDate>
-    <category>The Emberton Wire</category>
-</item>
-<item>
-    <title>episode3.png</title>
-    <description>Whitepine 3 premiere announcement.</description>
-    <link>episode3_exposure-3.00.png</link>
-    <originalLink>episode3.png</originalLink>
-    <pubDate>1730297378387</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>always laid in darkness fade.mp4</title>
-    <description>Whitepine 3 trailer with snapshot at 15s.</description>
-    <link>always laid in darkness fade.mp4_snapshot_00.15_exposure-3.00.jpg</link>
-    <originalLink>always laid in darkness fade.mp4_snapshot_00.15.jpg</originalLink>
-    <pubDate>1730297378387</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-    <category>Whitepine Trailers</category>
-</item>
-<item>
-    <title>The Emberton Wire - top doctors recommend: BEAT YOUR CHILDREN</title>
-    <description>Accompanying Whitepine 3, posted at <a href="https://x.com/TheEmbertonWire/status/1852002039217139762" target="_blank">TheEmbertonWire</a>.</description>
-    <link>the_emberton_wire_4.jpg</link>
-    <pubDate>1730386669340</pubDate>
-    <category>The Emberton Wire</category>
-</item>
-<item>
-    <title>episode4.png</title>
-    <description>Whitepine 4 premiere announcement.</description>
-    <link>episode4_exposure-3.00.png</link>
-    <originalLink>episode4.png</originalLink>
-    <pubDate>1734121685915</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>twailer.mp4</title>
-    <description>Whitepine 4 trailer with snapshot at 28s.</description>
-    <link>twailer.mp4_snapshot_00.28_exposure-3.00.jpg</link>
-    <originalLink>twailer.mp4_snapshot_00.28.jpg</originalLink>
-    <pubDate>1734121685915</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-    <category>Whitepine Trailers</category>
-</item>
-<item>
-    <title>The Emberton Wire - the gory, thrilling case continues!—A NEW LEAD IN THE CASE</title>
-    <description>Accompanying Whitepine 4, posted at <a href="https://x.com/TheEmbertonWire/status/1867979848150298914" target="_blank">TheEmbertonWire</a>.</description>
-    <link>the_emberton_wire_5.jpg</link>
-    <pubDate>1734196075843</pubDate>
-    <category>The Emberton Wire</category>
-</item>
-<item>
-    <title>episode5.png</title>
-    <description>Whitepine 5 premiere announcement.</description>
-    <link>episode5_exposure-3.00.png</link>
-    <originalLink>episode5.png</originalLink>
-    <pubDate>1740763145225</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>The Emberton Wire - FUNERAL TODAY</title>
-    <description>Accompanying Whitepine 5, posted at <a href="https://x.com/TheEmbertonWire/status/1895851533104726152" target="_blank">TheEmbertonWire</a>.</description>
-    <link>the_emberton_wire_6.jpg</link>
-    <pubDate>1740841203367</pubDate>
-    <category>The Emberton Wire</category>
-</item>
-<item>
-    <title>episode6.png</title>
-    <description>Whitepine 6 premiere announcement.</description>
-    <link>episode6_exposure-3.00.png</link>
-    <originalLink>episode6.png</originalLink>
-    <pubDate>1745242189791</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>The Emberton Wire - EMPATHY: GOOD OR DESTRUCTIVE?</title>
-    <description>Accompanying Whitepine 6, posted at <a href="https://x.com/TheEmbertonWire/status/1914695690833531079" target="_blank">TheEmbertonWire</a>.</description>
-    <link>the_emberton_wire_7.png</link>
-    <pubDate>1745334000677</pubDate>
-    <category>The Emberton Wire</category>
-</item>
-<item>
-    <title>episode7.png</title>
-    <description>Whitepine 7 premiere announcement.</description>
-    <link>episode7_exposure-3.00.png</link>
-    <originalLink>episode7.png</originalLink>
-    <pubDate>1752512858332</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>episode7_outnow.png</title>
-    <description>Whitepine 7 out now announcement.</description>
-    <link>episode7_outnow_exposure-3.00.png</link>
-    <originalLink>episode7_outnow.png</originalLink>
-    <pubDate>1752591563587</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>The Emberton Wire - NOTHING IMPORTANT HAPPENED TODAY.</title>
-    <description>Accompanying Whitepine 7, posted at <a href="https://x.com/TheEmbertonWire/status/1945146336870875576" target="_blank">TheEmbertonWire</a>.</description>
-    <link>the_emberton_wire_8.jpg</link>
-    <pubDate>1752594000438</pubDate>
-    <category>The Emberton Wire</category>
-</item>
-<item>
-    <title>episode8.png</title>
-    <description>Whitepine 8 premiere announcement.</description>
-    <link>episode8_exposure-3.00.png</link>
-    <originalLink>episode8.png</originalLink>
-    <pubDate>1758134328162</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>Editor10.mp4</title>
-    <description>Whitepine 8 trailer with snapshot at 45s.</description>
-    <link>Editor10.mp4_snapshot_00.45_exposure-3.00.png</link>
-    <originalLink>Editor10.mp4_snapshot_00.45.png</originalLink>
-    <pubDate>1758199157869</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-    <category>Whitepine Trailers</category>
-</item>
-<item>
-    <title>episode9.png</title>
-    <description>Whitepine 9 premiere announcement.</description>
-    <link>episode9_exposure-3.00.png</link>
-    <originalLink>episode9.png</originalLink>
-    <pubDate>1764768033903</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>vid1_9.mp4</title>
-    <description>Whitepine 9 trailer with snapshot at 21s.</description>
-    <link>vid1_9.mp4_snapshot_00.21_exposure-3.00.png</link>
-    <originalLink>vid1_9.mp4_snapshot_00.21.png</originalLink>
-    <pubDate>1764843904659</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-    <category>Whitepine Trailers</category>
-</item>
-<item>
-    <title>episode9premier.png</title>
-    <description>Whitepine 9 premiering now announcement.</description>
-    <link>episode9premier_exposure-3.00.png</link>
-    <originalLink>episode9premier.png</originalLink>
-    <pubDate>1764863941346</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>The Emberton Wire - NOBLEMAN RETURNS: from usherwood, unscathed!</title>
-    <description>Accompanying Whitepine 9, posted at <a href="https://x.com/TheEmbertonWire/status/1996617996639633503" target="_blank">TheEmbertonWire</a>.</description>
-    <link>the_emberton_wire_9.jpg</link>
-    <pubDate>1764865800424</pubDate>
-    <category>The Emberton Wire</category>
-</item>
-<item>
-    <title>episode10.png</title>
-    <description>Whitepine 10 premiere announcement.</description>
-    <link>episode10_exposure-3.00.png</link>
-    <originalLink>episode10.png</originalLink>
-    <pubDate>1773415900156</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>episode10premier.png</title>
-    <description>Whitepine 10 premiering soon announcement.</description>
-    <link>episode10premier_exposure-3.00.png</link>
-    <originalLink>episode10premier.png</originalLink>
-    <pubDate>1773500307717</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>The Emberton Wire - MURDERER CAUGHT! the feared whitepine slasher!</title>
-    <description>Accompanying Whitepine 10, posted at <a href="https://x.com/TheEmbertonWire/status/2032841683809734938" target="_blank">TheEmbertonWire</a>.</description>
-    <link>the_emberton_wire_10.jpg</link>
-    <pubDate>1773502200449</pubDate>
-    <category>The Emberton Wire</category>
-</item>
-
-<item>
-    <title>episode11.png</title>
-    <description>Whitepine 11 premiere announcement.</description>
-    <link>episode11_exposure-3.00.png</link>
-    <originalLink>episode11.png</originalLink>
-    <pubDate>1784732420194</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-<item>
-    <title>episode11premier.png</title>
-    <description>Whitepine 11 premiering today announcement.</description>
-    <link>episode11premier_exposure-3.00.png</link>
-    <originalLink>episode11premier.png</originalLink>
-    <pubDate>1784989882658</pubDate>
-    <category>Whitepine Announcements</category>
-    <category>Whitepine Episode Announcements</category>
-</item>
-</items>`;
-
-const parser = new DOMParser();
-
 function formatUnixTimestamp(timestamp) {
   const date = new Date(timestamp);
-
-  // Use toLocaleString to format the date and time
-  const formattedDate = date.toLocaleString({
-    weekday: "short", // "Thu"
-    day: "2-digit", // "01"
-    month: "short", // "Aug"
-    year: "numeric", // "2024"
-    hour: "2-digit", // "07" (or "19" depending on the time)
-    minute: "2-digit", // "29"
-    hour12: false, // Use 24-hour format
+  return date.toLocaleString("en-GB", {
+    weekday: "short",
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
   });
-
-  // Replace commas and spaces to match the desired format
-  return formattedDate;
-}
-
-async function parseGallery(active_category) {
-  let rssParsed = parser.parseFromString(rss, "text/xml");
-  let rssItems = rssParsed.querySelectorAll("item");
-
-  let items = [];
-  let all_categories = new Set();
-
-  rssItems.forEach((item) => {
-    let title = item.querySelector("title").innerHTML;
-    let link = item.querySelector("link").innerHTML;
-    let originalLink = item.querySelector("originalLink");
-
-    if (originalLink) {
-      originalLink = originalLink.innerHTML;
-    } else {
-      originalLink = link;
-    }
-
-    let description = item.querySelector("description").innerHTML;
-    let pubDate = formatUnixTimestamp(
-      parseInt(item.querySelector("pubDate").innerHTML),
-    );
-    let categories = [];
-
-    item.querySelectorAll("category").forEach((category) => {
-      categories.push(category.innerHTML);
-      all_categories.add(category.innerHTML);
-    });
-
-    items.push({
-      title: title,
-      link: link,
-      originalLink: originalLink,
-      description: description,
-      pubDate: pubDate,
-      categories: categories,
-    });
-  });
-
-  let buttons = document.getElementById("gallery-categories");
-  let fragment = document.createDocumentFragment();
-
-  all_categories.forEach((category) => {
-    let button = document.createElement("a");
-    button.href = `?category=${category}`;
-    button.className = `custom button ${category == active_category ? "inverse" : ""}`;
-    button.innerHTML = `<div><p><i class='bx bx-hash'></i>${category}</p></div>`;
-    fragment.appendChild(button);
-  });
-
-  buttons.appendChild(fragment);
-
-  return items;
 }
 
 export async function displayGallery() {
   const URL_PARAMS = new URLSearchParams(window.location.search);
   let hashElement = decodeURIComponent(window.location.hash.substring(1));
 
-  let category = URL_PARAMS.get("category") || "";
-  let showEdited = URL_PARAMS.get("type") == "edited";
+  let activeCategory = URL_PARAMS.get("category") || "";
+  let showEdited = URL_PARAMS.get("type") === "edited";
 
-  let rssGallery = await parseGallery(category);
+  const galleryContainer = document.querySelector("#gallery");
+  if (!galleryContainer) return;
 
-  let gallery = document.querySelector("#gallery");
-  let fragment = document.createDocumentFragment();
+  const response = await fetch("../assets/data/gallery.json");
+  const rawItems = await response.json();
 
-  rssGallery.forEach((image) => {
-    if (category && !image.categories.includes(category)) {
-      return;
+  let allCategories = new Set();
+  let items = rawItems.map((item) => {
+    let originalLink = item.originalLink || item.link;
+    let pubDateFormatted = formatUnixTimestamp(item.pubDate);
+    item.categories.forEach((cat) => allCategories.add(cat));
+
+    return {
+      title: item.title,
+      link: item.link,
+      originalLink: originalLink,
+      description: item.description,
+      pubDate: pubDateFormatted,
+      categories: item.categories,
+    };
+  });
+
+  // Setup the tag chips
+  const buttonsContainer = document.getElementById("gallery-categories");
+  if (buttonsContainer) {
+    let fragment = document.createDocumentFragment();
+    allCategories.forEach((category) => {
+      let button = document.createElement("button");
+      button.type = "button";
+      button.className = `tag-chip category-btn ${category === activeCategory ? "active" : ""}`;
+      button.dataset.category = category;
+      button.innerHTML = `<i class='bx bx-hash'></i><span>${category}</span>`;
+
+      button.addEventListener("click", () => {
+        // Toggle behaviour
+        if (activeCategory === category) {
+          activeCategory = "";
+        } else {
+          activeCategory = category;
+        }
+        updateUrlState();
+        filterGalleryItems();
+      });
+
+      fragment.appendChild(button);
+    });
+    buttonsContainer.appendChild(fragment);
+  }
+
+  // Setup the elements of the lightbox
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("modal-img");
+  const modalTitle = document.getElementById("modal-title");
+  const modalDesc = document.getElementById("modal-desc");
+  const modalToggleBtn = document.getElementById("modal-toggle-edited");
+  const modalFullResBtn = document.getElementById("modal-fullres-link");
+  const modalClose = document.querySelector(".modal-close");
+
+  let currentModalItem = null;
+  let modalShowEdited = showEdited;
+
+  function openModal(item) {
+    currentModalItem = item;
+    modalShowEdited = showEdited;
+    updateModalImage();
+    modalTitle.textContent = item.title;
+    modalDesc.innerHTML = `${item.pubDate} — ${item.description}`;
+    modal.classList.add("active");
+  }
+
+  function updateModalImage() {
+    if (!currentModalItem) return;
+    const src = modalShowEdited
+      ? currentModalItem.link
+      : currentModalItem.originalLink;
+    const fullPath = `../assets/img/${src}`;
+    modalImg.src = `${fullPath}.webp`;
+    modalToggleBtn.textContent = modalShowEdited
+      ? "Switch to Original Image"
+      : "Switch to Edited Image";
+    if (modalFullResBtn) {
+      modalFullResBtn.href = fullPath;
     }
+  }
 
+  if (modalClose) {
+    modalClose.onclick = () => modal.classList.remove("active");
+    modal.onclick = (e) => {
+      if (e.target === modal) modal.classList.remove("active");
+    };
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") modal.classList.remove("active");
+    });
+  }
+
+  if (modalToggleBtn) {
+    modalToggleBtn.onclick = () => {
+      modalShowEdited = !modalShowEdited;
+      updateModalImage();
+    };
+  }
+
+  // Render all the gallery items straight away
+  let fragment = document.createDocumentFragment();
+  const cardElements = [];
+
+  items.forEach((image) => {
     let imageElement = document.createElement("div");
     let coverImage = document.createElement("img");
 
     imageElement.id = image.title;
     imageElement.classList.add("gallery-item");
-
-    if (hashElement == image.title) {
-      imageElement.classList.add("highlight");
-    }
+    imageElement.dataset.categories = JSON.stringify(image.categories);
 
     coverImage.alt = image.description;
-    coverImage.dataset.editedSrc = `../assets/img/${image.link}`;
-    coverImage.dataset.originalSrc = `../assets/img/${image.originalLink}`;
-    coverImage.dataset.fullSrc = showEdited
+    coverImage.dataset.editedSrc = `../assets/img/${image.link}.webp`;
+    coverImage.dataset.originalSrc = `../assets/img/${image.originalLink}.webp`;
+    coverImage.src = showEdited
       ? coverImage.dataset.editedSrc
       : coverImage.dataset.originalSrc;
-    coverImage.src = `${coverImage.dataset.fullSrc}.webp`;
     coverImage.loading = "lazy";
 
-    coverImage.onclick = () =>
-      window.open(coverImage.dataset.fullSrc, "_blank");
+    coverImage.onclick = () => openModal(image);
 
     let imageDescription = document.createElement("div");
     imageDescription.classList.add("gallery-item-description");
 
-    imageDescription.innerHTML = `<h3>${showEdited ? `${image.title}&nbsp;<i class="bx bx-edit"></i>` : image.title}</h3><span class="date">${image.pubDate}</span><p class="description">${image.description}</p>`;
+    imageDescription.innerHTML = `
+      <h3 class="card-title-heading">${showEdited ? `${image.title}&nbsp;<i class="bx bx-edit"></i>` : image.title}</h3>
+      <span class="date">${image.pubDate}</span>
+      <p class="description">${image.description}</p>
+    `;
 
     imageElement.appendChild(coverImage);
     imageElement.appendChild(imageDescription);
     fragment.appendChild(imageElement);
+
+    cardElements.push({
+      element: imageElement,
+      data: image,
+      img: coverImage,
+      heading: imageDescription.querySelector(".card-title-heading"),
+    });
   });
 
-  gallery.appendChild(fragment);
+  galleryContainer.appendChild(fragment);
 
-  const toggleImageTypeLink = document.getElementById("toggle-image-type-link");
-  toggleImageTypeLink.href = `?type=${showEdited ? "original" : "edited"}`;
+  // He's a smooth operator [wink]
+  function filterGalleryItems() {
+    cardElements.forEach(({ element, data }) => {
+      const matchesCategory =
+        !activeCategory || data.categories.includes(activeCategory);
 
-  toggleImageTypeLink.addEventListener("click", (event) => {
-    event.preventDefault();
+      if (matchesCategory) {
+        element.style.display = "";
+        requestAnimationFrame(() => {
+          element.classList.remove("filtered-out");
+        });
+      } else {
+        element.classList.add("filtered-out");
+        setTimeout(() => {
+          if (element.classList.contains("filtered-out")) {
+            element.style.display = "none";
+          }
+        }, 250);
+      }
+    });
 
-    let urlParams = new URLSearchParams(window.location.search);
-    urlParams.set("type", showEdited ? "original" : "edited");
+    // Update the active visual state on category tag buttons
+    document.querySelectorAll(".category-btn").forEach((btn) => {
+      if (btn.dataset.category === activeCategory) {
+        btn.classList.add("active");
+      } else {
+        btn.classList.remove("active");
+      }
+    });
+  }
 
-    window.location.search = urlParams.toString();
-  });
+  // Update for all images the exposure
+  function applyExposureMode() {
+    cardElements.forEach(({ data, img, heading }) => {
+      img.src = showEdited ? img.dataset.editedSrc : img.dataset.originalSrc;
+      heading.innerHTML = showEdited
+        ? `${data.title}&nbsp;<i class="bx bx-edit"></i>`
+        : data.title;
+    });
 
-  const toggleImageTypeText = document.getElementById("toggle-image-type-text");
-  toggleImageTypeText.textContent = showEdited
-    ? "Show Original Images"
-    : "Show Edited Images";
+    const toggleImageTypeText = document.getElementById(
+      "toggle-image-type-text",
+    );
+    if (toggleImageTypeText) {
+      toggleImageTypeText.textContent = showEdited
+        ? "Show Original Images"
+        : "Show Edited Images";
+    }
+  }
+
+  // URL state sync without big bang [wink] on page reload
+  function updateUrlState() {
+    const newParams = new URLSearchParams();
+    if (activeCategory) newParams.set("category", activeCategory);
+    if (showEdited) newParams.set("type", "edited");
+
+    const newUrl = `${window.location.pathname}${newParams.toString() ? `?${newParams.toString()}` : ""}${window.location.hash}`;
+    window.history.pushState({}, "", newUrl);
+  }
+
+  // Switch exposure mode button
+  const toggleImageTypeBtn = document.getElementById("toggle-image-type-link");
+  if (toggleImageTypeBtn) {
+    toggleImageTypeBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      showEdited = !showEdited;
+      applyExposureMode();
+      updateUrlState();
+    });
+  }
+
+  // Initial render & scroll into view if target hash exists
+  filterGalleryItems();
+  applyExposureMode();
+
+  if (hashElement) {
+    const targetEl = document.getElementById(hashElement);
+    if (targetEl) {
+      targetEl.classList.add("highlight");
+      setTimeout(() => {
+        targetEl.scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 150);
+    }
+  }
 }

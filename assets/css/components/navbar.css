@@ -1,73 +1,69 @@
 #navbar-container {
-    /* place on top */
-    position: fixed;
-    top: 0;
-
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 0;
-
-    width: 100%;
-
-    z-index: 1000;
-    background: #0c0c0c;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(10, 11, 14, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-colour);
 }
 
 #navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    margin: 0 auto;
-    max-width: var(--column-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 25px;
+  max-width: var(--max-content-width);
 }
 
 #navbar #title a {
-    flex-grow: 1;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-
-    font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--text-colour);
 }
 
 #navbar #title a img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 #navbar #links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 #navbar #links a {
-    transition: color 0.5s;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--muted-text-colour);
+  transition: color 0.25s;
 }
 
 #navbar #links a#active,
 #navbar #links a:hover {
-    color: var(--muted-text-colour);
+  color: var(--link-colour);
 }
 
-@media (max-width: 1000px) {
-    #navbar-container {
-        background: linear-gradient(90deg, #CA424633, #9195ff33);
-        position: relative;
-    }
+@media (max-width: 768px) {
+  #navbar-container {
+    position: relative;
+    left: 0;
+    transform: none;
+  }
 
-    #navbar {
-        flex-direction: column;
-        padding: 0px 10px;
-    }
-
-    #navbar #title a {
-        margin-bottom: 10px;
-    }
+  #navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

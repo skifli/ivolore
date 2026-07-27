@@ -5,8 +5,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="initial-scale=1" />
 
-        <link rel="icon" href="assets/orchard_pfp.webp" type="image/x-icon" />
-        <title>Whitepine Secret Videos</title>
+        <link
+            rel="icon"
+            href="../assets/orchard_pfp.webp"
+            type="image/x-icon"
+        />
+        <title>Gallery - Whitepine Secret Media</title>
 
         <script
             defer
@@ -34,7 +38,7 @@
                             src="../assets/orchard_pfp.webp"
                             alt="Ivocord's PFP"
                             height="20px"
-                            width="auto"
+                            width="20px"
                         />
                         <p>whitepine secret videos</p>
                     </a>
@@ -52,19 +56,20 @@
 
         <div id="hero">
             <div id="text">
-                <h1>gallery</h1>
+                <h1>
+                    Media
+                    <span class="gradient-text accent-italic">archive</span>
+                </h1>
                 <p>Mebia. All of it.</p>
             </div>
             <div class="buttons" id="gallery-categories">
                 <a
                     href="?type=edited"
-                    class="custom button"
+                    class="custom tag-chip tag-chip-accent"
                     id="toggle-image-type-link"
                 >
-                    <div>
-                        <i class="bx bx-images"></i>
-                        <p id="toggle-image-type-text">Show Edited Images</p>
-                    </div>
+                    <i class="bx bx-images"></i>
+                    <span id="toggle-image-type-text">Show Edited Images</span>
                 </a>
             </div>
         </div>
@@ -72,11 +77,36 @@
         <div id="gallery-content">
             <div class="section">
                 <div id="gallery"></div>
-                <script type="module">
-                    import { displayGallery } from "../assets/js/gallery.js";
-                    displayGallery();
-                </script>
             </div>
         </div>
+
+        <div id="image-modal" class="modal">
+            <span class="modal-close">&times;</span>
+            <div class="modal-container">
+                <img id="modal-img" src="" alt="Full Preview" />
+                <div class="modal-info">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-desc"></p>
+                </div>
+                <div class="modal-controls">
+                    <button id="modal-toggle-edited" class="modal-btn">
+                        <i class="bx bx-adjust"></i> Toggle Exposure Mode
+                    </button>
+                    <a
+                        id="modal-fullres-link"
+                        href="#"
+                        target="_blank"
+                        class="modal-btn custom"
+                    >
+                        <i class="bx bx-export"></i> Open High Resolution Image
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script type="module">
+            import { displayGallery } from "../assets/js/gallery.js";
+            displayGallery();
+        </script>
     </body>
 </html>

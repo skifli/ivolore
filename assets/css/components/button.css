@@ -1,45 +1,83 @@
 .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.button div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-
-    gap: 5px;
-
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
-
-    transition: background-color 0.5s, color 0.5s;
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--surface-colour);
+  color: var(--muted-text-colour);
+  border: 1px solid var(--border-colour);
+  padding: 7px 14px;
+  border-radius: 5px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  user-select: none;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  text-decoration: none !important;
 }
 
-.button div p {
-    display: inline-flex;
-    align-items: center;
+.tag-chip i {
+  font-size: 0.9rem;
+  color: var(--muted-text-colour);
+  transition: color 0.2s ease;
 }
 
-.button div:hover,
-.button.inverse div {
-    background-color: var(--background-colour);
-    color: var(--text-colour);
-
-    background-color: var(--background-colour);
-    color: var(--text-colour);
+.tag-chip:hover {
+  background: var(--surface-hover);
+  color: var(--text-colour);
+  border-color: var(--border-hover);
+  transform: translateY(-1px);
 }
 
-.button.inverse div:hover {
-    background-color: initial;
-    color: var(--text-colour);
+.tag-chip:hover i {
+  color: var(--link-colour);
+}
+
+.tag-chip.active {
+  background: rgba(165, 180, 252, 0.14);
+  color: #a5b4fc;
+  border-color: rgba(165, 180, 252, 0.5);
+  box-shadow: 0 0 12px rgba(165, 180, 252, 0.25);
+  font-weight: 600;
+}
+
+.tag-chip.active i {
+  color: #a5b4fc;
+}
+
+.tag-chip-accent {
+  color: #fca5a5;
+  border-color: rgba(244, 63, 94, 0.3);
+}
+
+.tag-chip-accent i {
+  color: #fca5a5;
+}
+
+.tag-chip-accent:hover {
+  border-color: rgba(244, 63, 94, 0.5);
+  color: #fecdd3;
+}
+
+.tag-chip-accent:hover i {
+  color: #fecdd3;
 }

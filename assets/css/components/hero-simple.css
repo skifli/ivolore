@@ -1,18 +1,21 @@
 #hero-simple {
-    background: linear-gradient(0deg, #000000, #ffffff00), linear-gradient(90deg, #CA424633, #9195ff33);
-    padding: 100px 25px;
+  background: linear-gradient(
+    180deg,
+    rgba(165, 180, 252, 0.06) 0%,
+    rgba(10, 11, 14, 0) 100%
+  );
+  padding: 85px 25px 40px 25px;
+  border-bottom: 1px solid var(--border-colour);
+  margin-bottom: 10px;
 }
 
-#hero-simple>* {
-    text-align: center;
+#hero-simple > * {
+  text-align: center;
 }
 
 #hero-simple p {
-    color: var(--muted-text-colour);
-    font-size: 1.25rem;
-    font-weight: 400;
-}
-
-#hero-simple #logos a i {
-    font-size: 1.5rem;
+  color: var(--muted-text-colour);
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-top: 6px;
 }
